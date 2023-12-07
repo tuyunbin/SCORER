@@ -45,7 +45,7 @@ python scripts/extract_features.py --input_image_dir ./data/nsc_images --output_
 
 * Build vocab and label files using caption annotations:
 ```
-python scripts/preprocess_captions_transformer.py --input_captions_json ./data/change_captions.json --input_neg_captions_json ./data/no_change_captions.json --input_image_dir ./data/images --split_json ./data/splits.json --output_vocab_json ./data/vocab.json --output_h5 ./data/labels.h5
+python scripts/preprocess_captions_transformer.py --input_captions_json ./data/change_captions.json --input_neg_captions_json ./data/no_change_captions.json --input_image_dir ./data/images --split_json ./data/splits.json --output_vocab_json ./data/transformer_vocab.json --output_h5 ./data/transformer_labels.h5
 ```
 
 ## Training
