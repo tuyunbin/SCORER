@@ -217,11 +217,11 @@ while t < cfg.train.max_iter:
         # lr_scheduler.step()
 
         if hasattr(change_detector, 'module'):
-            torch.clamp_(change_detector.cross_layer.self_attention.module.logit_scale.data, max=np.log(100))
-            logit_scale = change_detector.cross_layer.self_attention.module.logit_scale.exp().item()
+            torch.clamp_(change_detector.scorer.attention.module.logit_scale.data, max=np.log(100))
+            logit_scale = change_detector.scorer.attention.module.logit_scale.exp().item()
         else:
-            torch.clamp_(change_detector.cross_layer[-1].self_attention.logit_scale.data, max=np.log(100))
-            logit_scale = change_detector.cross_layer[-1].self_attention.logit_scale.exp().item()
+            torch.clamp_(change_detector.scorer[-1].attention.logit_scale.data, max=np.log(100))
+            logit_scale = change_detector.scorer[-1].attention.logit_scale.exp().item()
             torch.clamp_(generator.contra.logit_scale.data, max=np.log(100))
             logit_scale_cycle = generator.contra.logit_scale.exp().item()
         stats['logit_scale'] = logit_scale
