@@ -14,7 +14,7 @@ Tu, Yunbin, et al. ["Self-Supervised Cross-View Representation Reconstruction fo
 4. An NVIDA 3090 GPU or others.
 
 ## Data
-1. Download data from here: [google drive link](https://drive.google.com/file/d/1HJ3gWjaUJykEckyb2M0MB4HnrJSihjVe/view?usp=sharing) And [Baidu drive link](https://pan.baidu.com/s/1PiLlUw5PP7IzWP_OH400AQ), where the extraction code is qtzy.
+1. Download data from here: [google drive link](https://drive.google.com/file/d/1HJ3gWjaUJykEckyb2M0MB4HnrJSihjVe/view?usp=sharing) And [Baidu drive link](https://pan.baidu.com/s/16KIpCxTRc786WYE_zDKpUw?pwd=2dn6), where the extraction code is 2dn6.
 ```
 python google_drive.py 1HJ3gWjaUJykEckyb2M0MB4HnrJSihjVe clevr_change.tar.gz
 tar -xzvf clevr_change.tar.gz
